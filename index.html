@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>看电影</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/TouchSlide.1.1.js"></script>
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+    <!--<script src='js/jquery-2.1.4.min.js'></script>-->
+
+    <script src="js/index.js"></script>
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <span class="header-position">广州</span><i></i>
+        <h1>极道看电影</h1>
+        <a class="my" href="#"><img src="img/my.png" alt=""/></a>
+        <a class="search" href="#"><img src="img/icon-head-search.png" alt=""/></a>
+    </header>
+
+    <!-- banner Start ================================ -->
+    <div id="focus" class="focus">
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="#"><img src="img/1.jpg" /></a></li>
+                <li><a href="#"><img src="img/2.jpg" /></a></li>
+                <li><a href="#"><img src="img/3.jpg" /></a></li>
+                <li><a href="#"><img src="img/4.jpg" /></a></li>
+                <li><a href="#"><img src="img/5.jpg" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        TouchSlide({
+            slideCell:"#focus",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul",
+            effect:"leftLoop",
+            autoPlay:true,//自动播放
+            autoPage:true //自动分页
+        });
+    </script>
+    <!-- banner End ================================ -->
+
+    <div class="banner-bottom">
+            <a href="#"><img src="img/item1.png" alt=""/><span>影片</span></a>
+            <a href="#"><img src="img/item2.png" alt=""/><span>影院</span></a>
+            <a href="#"><img src="img/item3.png" alt=""/><span>会员卡</span></a>
+            <a href="#"><img src="img/item4.png" alt=""/><span>商城</span></a>
+            <a href="#"><img src="img/item5.png" alt=""/><span>电影圈</span></a>
+    </div>
+
+    <!--move-list-->
+    <div class="move-list" id="outer">
+        <ul class="slides clearfix" id="inner">
+            <li>
+                <section>
+                    <i>预售</i>
+                    <img src="img/d1.jpg" alt=""/>
+                </section>
+                <span>万万没想到</span><br/>
+                <span>261991人想看</span>
+            </li>
+            <li>
+                <section>
+                    <img src="img/d2.jpg" alt=""/>
+                </section>
+                <span>极盗者</span><br/>
+                <span>8.7</span>
+            </li>
+            <li>
+                <section>
+                    <i>预售</i>
+                    <img src="img/d3.jpg" alt=""/>
+                </section>
+                <span>鬼吹灯之寻龙诀</span><br/>
+                <span>266712人想看</span>
+            </li>
+            <li>
+                <section>
+                    <img src="img/d4.jpg" alt=""/>
+                </section>
+                <span>师父</span><br/>
+                <span>8.3</span>
+            </li>
+            <li>
+                <section>
+                    <img src="img/d5.jpg" alt=""/>
+                </section>
+                <span>火星救援</span><br/>
+                <span>8.8</span>
+            </li>
+            <li>
+                <section>
+                    <img src="img/d6.jpg" alt=""/>
+                </section>
+                <span>我的少女时代</span><br/>
+                <span>9.1</span>
+            </li>
+            <li>
+                <section>
+                    <i class="new">新片</i>
+                    <img src="img/d7.jpg" alt=""/>
+                </section>
+                <span>极速风流</span><br/>
+                <span>7.0</span>
+            </li>
+            <li>
+                <section>
+                    <img src="img/d8.jpg" alt=""/>
+                </section>
+                <span>砰然星动</span><br/>
+                <span>8.0</span>
+            </li>
+            <li class="li-showAll">
+                <section class="showAll">
+                    全部影片
+                </section>
+            </li>
+        </ul>
+
+    </div>
+    <!--move-list end-->
+
+    <!--list-info-->
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="list-info">
+        <a href="#">
+            <div class="info">
+                <div class="info-name">星美国际电影城(广州新都荟店)
+                    <span class="vip">会员</span><span class="shop">商城</span>
+                </div>
+                <p>广州市珠海区广州市海珠区东晓南路新都会广场4楼</p>
+                <div class="money">
+                    <span class="how">￥13.6</span>起 <span class="operation">师父特惠</span>
+                    <span class="tuanzuo">座|团</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!--list-info end-->
+
+    <!--load_More-->
+    <div class="loadMore">
+        <a href="#">点击加载更多<i></i></a>
+    </div>
+    <!--load_More end-->
+
+    <!--footer-->
+    <div class="footer">
+        <a href="#" class="username">135****4008</a>
+        <a href="#" class="city">城市：广州<i></i></a>
+        <p>如有疑问可致电（9:00-21:00）</p>
+        客服电话：<span class="call">4006-099-866</span>
+    </div>
+
+    <div class="footer_city" id="footer_city">
+        <a href="#">广州<i></i></a>　|　广州
+        <a href="#" class="refresh"></a>
+    </div>
+    <!--footer end-->
+
+
+    <script>
+        var script = document.getElementsByTagName('script')[2];
+        script.onload=script.onreadystatechange=function(){
+            if(!this.readyState||this.readyState=='loaded'||this.readyState=='complete'){
+                null;
+            }else{
+                location.reload(true);
+            }
+            script.onload=script.onreadystatechange=null;
+        }
+    </script>
+</body>
+
+</html>
